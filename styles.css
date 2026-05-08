@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #1f2937;
+    line-height: 1.6;
   }
   
   header {
@@ -9,21 +11,25 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  .subtitle {
+    margin: 0 0 12px 0;
+    color: #4b5563;
+  }
   
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  
-  nav li {
-    margin: 0 10px;
+    justify-content: center;
+    gap: 16px;
   }
   
   nav a {
     color: #333;
     text-decoration: none;
+    font-weight: 600;
   }
   
   nav a:hover {
@@ -31,15 +37,21 @@ body {
   }
   
   main {
-    margin: 20px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    max-width: 900px;
   }
   
   section {
-    margin: 20px 0;
+    margin: 24px 0;
   }
   
   section h2 {
     margin-bottom: 10px;
+  }
+
+  article {
+    margin-bottom: 24px;
   }
   
   footer {
@@ -47,22 +59,4 @@ body {
     text-align: center;
     padding: 10px;
   }
-  
-  form label,
-  form input,
-  form textarea {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="submit"] {
-    background-color: #0093ff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  
   
