@@ -3,60 +3,139 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salahuddin Khan - About</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="color-scheme" content="dark">
+    <title>Salahuddin Khan — Robotics &amp; Perception</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <header>
-      <h1>Salahuddin Khan</h1>
-      <p class="subtitle">Robotics and Perception Engineer</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="experience.html">Experience</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>About</h2>
-        <p>
-          Robotics and perception engineer with 6+ years of experience developing real-time SLAM,
-          multi-view geometry, and sensor fusion systems for robotics and autonomous vehicles.
-        </p>
-        <p>
-          I build scalable perception pipelines for 3D reconstruction, localization, and mapping
-          using multi-camera and multimodal sensor stacks.
-        </p>
-        <p>
-          My work combines geometric computer vision with modern machine learning to deliver robust
-          perception systems in real-world environments.
-        </p>
-      </section>
+  <body class="has-fractal-bg">
+    <canvas id="mandelbrot" width="4" height="4" aria-hidden="true"></canvas>
+    <div class="fractal-controls" aria-label="Fractal background controls">
+      <div class="fractal-controls-inner">
+        <span class="fractal-hint">Shift + scroll to zoom · Shift + drag to pan</span>
+        <div class="fractal-row">
+          <button type="button" class="fractal-btn" id="fractal-zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" class="fractal-btn fractal-btn-wide" id="fractal-reset" aria-label="Reset view">RST</button>
+          <button type="button" class="fractal-btn" id="fractal-zoom-in" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+    </div>
 
-      <section>
-        <h2>Core Skills</h2>
-        <ul>
-          <li>Visual SLAM and Visual-Inertial Odometry</li>
-          <li>Sensor Fusion and Probabilistic Filtering</li>
-          <li>Multi-View Geometry and 3D Reconstruction</li>
-          <li>Embedded robotics systems and large-scale deployment</li>
-        </ul>
-      </section>
+    <div class="site-shell">
+      <header class="top-nav">
+        <a class="logo" href="index.html">SK</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="active" aria-current="page"><span class="nav-num">01.</span>About</a>
+            </li>
+            <li>
+              <a href="education.html"><span class="nav-num">02.</span>Education</a>
+            </li>
+            <li>
+              <a href="experience.html"><span class="nav-num">03.</span>Experience</a>
+            </li>
+            <li>
+              <a href="bookshelf.html"><span class="nav-num">04.</span>Bookshelf</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="btn-outline" href="mailto:salahuddin.khan.1994@gmail.com?subject=Resume%20request">Resume</a>
+      </header>
 
-      <section>
-        <h2>Contact</h2>
-        <ul>
-          <li>Email: salahuddin.khan.1994@gmail.com</li>
-          <li>LinkedIn: linkedin.com/in/salkhanrob</li>
-          <li>GitHub: github.com/salahkhan94</li>
-          <li>Location: New York, New York</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © Salahuddin Khan</p>
-    </footer>
+      <main>
+        <section class="hero">
+          <div class="hero-photo-wrap" aria-hidden="true">
+            <span class="hero-photo-placeholder">SK</span>
+          </div>
+          <div>
+            <p class="hero-kicker">Hi, my name is</p>
+            <h1 class="hero-name">Salahuddin Khan.</h1>
+            <p class="hero-tagline">
+              Robotics and perception engineer focused on real-time SLAM, multi-view geometry, and
+              sensor fusion for autonomous systems.
+            </p>
+            <div class="hero-badges">
+              <span class="badge"><span class="badge-icon" aria-hidden="true">◆</span>M.Eng. ECE, Cornell</span>
+              <span class="badge"><span class="badge-icon" aria-hidden="true">◇</span>New York, NY</span>
+            </div>
+            <div class="social-row">
+              <a href="https://github.com/salahkhan94" aria-label="GitHub" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/salkhanrob" aria-label="LinkedIn" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:salahuddin.khan.1994@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Highlights">
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">⏱</div>
+            <p class="stat-value">6+ yrs</p>
+            <p class="stat-label">Robotics &amp; perception</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">◎</div>
+            <p class="stat-value">SLAM &amp; VIO</p>
+            <p class="stat-label">Production-scale systems</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">▣</div>
+            <p class="stat-value">200K+</p>
+            <p class="stat-label">Vehicles (state estimation)</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">✦</div>
+            <p class="stat-value">M.Eng.</p>
+            <p class="stat-label">Cornell University</p>
+          </div>
+        </section>
+
+        <section class="banner-card">
+          <div>
+            <h2>Fractal backdrop</h2>
+            <p>
+              This page uses a GPU Mandelbrot as a full-screen background. Hold Shift and scroll to
+              zoom, or Shift-drag on empty space to pan. Use the corner controls for zoom reset.
+            </p>
+          </div>
+          <div class="banner-actions">
+            <a class="btn-outline" href="experience.html">View experience</a>
+            <a class="btn-outline" href="bookshelf.html">Bookshelf</a>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title"><span>01.</span>About me</h2>
+          <div class="content-card">
+            <p>
+              I am a robotics and perception engineer with 6+ years of experience developing real-time
+              SLAM, multi-view geometry, and sensor fusion for robotics and autonomous vehicles.
+            </p>
+            <p>
+              I build scalable perception pipelines for 3D reconstruction, localization, and mapping
+              using multi-camera and multimodal sensor stacks, combining classical geometric vision with
+              modern machine learning for robust deployment in the real world.
+            </p>
+            <p>
+              Core strengths include Visual SLAM and VIO, probabilistic filtering, bundle adjustment,
+              embedded C/C++ on ARM, and collaboration across firmware, ML, and backend teams.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Salahuddin Khan — built with static HTML &amp; WebGL</p>
+      </footer>
+    </div>
+    <script src="mandelbrot.js"></script>
   </body>
 </html>

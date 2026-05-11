@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Salahuddin Khan — Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="top-nav">
+        <a class="logo" href="index.html">SK</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html"><span class="nav-num">01.</span>About</a></li>
+            <li><a href="education.html"><span class="nav-num">02.</span>Education</a></li>
+            <li><a href="experience.html"><span class="nav-num">03.</span>Experience</a></li>
+            <li>
+              <a href="bookshelf.html" class="active" aria-current="page"><span class="nav-num">04.</span>Bookshelf</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="btn-outline" href="mailto:salahuddin.khan.1994@gmail.com?subject=Resume%20request">Resume</a>
+      </header>
+
+      <main>
+        <h1 class="page-heading">Bookshelf</h1>
+        <p class="page-sub">
+          A short list of books that have shaped how I think about estimation, geometry, and building
+          systems that work in the real world.
+        </p>
+
+        <div class="book-grid">
+          <article class="book-card">
+            <h3>Probabilistic Robotics</h3>
+            <p class="author">Thrun, Burgard, and Fox</p>
+            <p>Bayes filters, Kalman family estimators, and particle filters — the backbone of robust localization.</p>
+          </article>
+          <article class="book-card">
+            <h3>Multiple View Geometry in Computer Vision</h3>
+            <p class="author">Hartley and Zisserman</p>
+            <p>The standard reference for multi-view geometry, calibration, and bundle adjustment intuition.</p>
+          </article>
+          <article class="book-card">
+            <h3>State Estimation for Robotics</h3>
+            <p class="author">Timothy D. Barfoot</p>
+            <p>Clear treatment of Lie groups, rotation estimation, and modern robotics state estimation.</p>
+          </article>
+          <article class="book-card">
+            <h3>Convex Optimization</h3>
+            <p class="author">Boyd and Vandenberghe</p>
+            <p>Useful whenever perception pipelines reduce to structured nonlinear optimization problems.</p>
+          </article>
+          <article class="book-card">
+            <h3>Deep Learning</h3>
+            <p class="author">Goodfellow, Bengio, and Courville</p>
+            <p>Broad foundations for the learning components that sit next to geometric pipelines.</p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Salahuddin Khan</p>
+      </footer>
+    </div>
+  </body>
+</html>

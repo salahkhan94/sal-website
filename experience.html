@@ -3,88 +3,95 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salahuddin Khan - Experience</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="color-scheme" content="dark">
+    <title>Salahuddin Khan — Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Salahuddin Khan</h1>
-      <p class="subtitle">Robotics and Perception Engineer</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="experience.html">Experience</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>Professional Experience</h2>
-        <article>
-          <h3>Embedded Robotics Engineer - Cartrack</h3>
-          <p>Jan 2022 - Jul 2024 | Hyderabad</p>
-          <ul>
+    <div class="site-shell">
+      <header class="top-nav">
+        <a class="logo" href="index.html">SK</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html"><span class="nav-num">01.</span>About</a></li>
+            <li><a href="education.html"><span class="nav-num">02.</span>Education</a></li>
             <li>
-              Designed and deployed a real-time localization system using IMU + GPS fusion with an
-              invariant Extended Kalman Filter across 200K+ vehicles.
+              <a href="experience.html" class="active" aria-current="page"><span class="nav-num">03.</span>Experience</a>
             </li>
-            <li>
-              Integrated neural-network noise modeling with classical state estimation pipelines for
-              improved robustness.
-            </li>
-            <li>
-              Built embedded C calibration pipelines for sensor extrinsics and IMU alignment on ARM
-              platforms, reducing factory calibration time by 40%.
-            </li>
+            <li><a href="bookshelf.html"><span class="nav-num">04.</span>Bookshelf</a></li>
           </ul>
-        </article>
+        </nav>
+        <a class="btn-outline" href="mailto:salahuddin.khan.1994@gmail.com?subject=Resume%20request">Resume</a>
+      </header>
 
-        <article>
-          <h3>Computer Vision Engineer - Preimage</h3>
-          <p>Aug 2020 - Dec 2021 | Bangalore</p>
-          <ul>
-            <li>
-              Developed large-scale 3D reconstruction pipelines using multi-view geometry and bundle
-              adjustment for drone-based mapping.
-            </li>
-            <li>
-              Implemented camera calibration, feature matching, and pose graph optimization for
-              accurate camera trajectory recovery.
-            </li>
-          </ul>
-        </article>
+      <main>
+        <h1 class="page-heading">Experience</h1>
+        <p class="page-sub">Selected roles in robotics, perception, and embedded systems.</p>
 
-        <article>
-          <h3>Flight Controls Software Engineer - Third Space Auto</h3>
-          <p>Mar 2019 - Jul 2020 | Helsinki</p>
-          <ul>
-            <li>
-              Developed vision-based navigation and precision landing algorithms for UAVs in
-              GPS-denied environments.
-            </li>
-            <li>Integrated Visual-Inertial SLAM into PX4 autonomous flight stacks.</li>
-          </ul>
-        </article>
+        <div class="content-card">
+          <article>
+            <h3>Embedded Robotics Engineer — Cartrack</h3>
+            <p class="meta">Jan 2022 – Jul 2024 · Hyderabad</p>
+            <ul>
+              <li>
+                Real-time localization with IMU + GPS fusion using an invariant Extended Kalman Filter,
+                deployed across 200K+ production vehicles.
+              </li>
+              <li>
+                Neural network noise modeling integrated with classical state estimation for improved
+                robustness.
+              </li>
+              <li>
+                Embedded C calibration pipelines for sensor extrinsics and IMU alignment on ARM,
+                reducing factory calibration time by 40%.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Computer Vision Engineer — Preimage</h3>
+            <p class="meta">Aug 2020 – Dec 2021 · Bangalore</p>
+            <ul>
+              <li>
+                Large-scale 3D reconstruction with multi-view geometry and bundle adjustment for
+                drone-based mapping.
+              </li>
+              <li>
+                Camera calibration, feature matching, and pose graph optimization for accurate
+                trajectories over large image sets.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Flight Controls Software Engineer — Third Space Auto</h3>
+            <p class="meta">Mar 2019 – Jul 2020 · Helsinki</p>
+            <ul>
+              <li>Vision-based navigation and precision landing for UAVs in GPS-denied environments.</li>
+              <li>Visual-Inertial SLAM integrated into PX4-based autonomous flight stacks.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Lead Autonomous Systems Engineer — Cell Propulsion</h3>
+            <p class="meta">Sep 2017 – Mar 2019 · Bangalore</p>
+            <ul>
+              <li>
+                Led perception and localization for autonomous electric vehicles and indoor mobile
+                robots.
+              </li>
+              <li>
+                Multi-sensor fusion combining radar, cameras, IMU, wheel odometry, and GPS; extended
+                SLAM to multi-camera setups and HD maps.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </main>
 
-        <article>
-          <h3>Lead Autonomous Systems Engineer - Cell Propulsion</h3>
-          <p>Sep 2017 - Mar 2019 | Bangalore</p>
-          <ul>
-            <li>
-              Led development of perception and localization systems for autonomous electric vehicles
-              and indoor mobile robots.
-            </li>
-            <li>
-              Designed multi-sensor fusion pipelines combining radar, cameras, IMU, wheel odometry,
-              and GPS.
-            </li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © Salahuddin Khan</p>
-    </footer>
+      <footer class="site-footer">
+        <p>Salahuddin Khan</p>
+      </footer>
+    </div>
   </body>
 </html>

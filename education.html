@@ -3,44 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salahuddin Khan - Education</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="color-scheme" content="dark">
+    <title>Salahuddin Khan — Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Salahuddin Khan</h1>
-      <p class="subtitle">Robotics and Perception Engineer</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="experience.html">Experience</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>Education</h2>
-        <article>
-          <h3>Cornell University</h3>
-          <p>M.Eng. Electrical and Computer Engineering (2024 - 2025)</p>
-          <p>GPA: 3.53</p>
-          <p>
-            Relevant coursework: Computer Vision, Applied Machine Learning, Digital Signal
-            Processing, Practical ML Applications
-          </p>
-        </article>
+    <div class="site-shell">
+      <header class="top-nav">
+        <a class="logo" href="index.html">SK</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html"><span class="nav-num">01.</span>About</a></li>
+            <li>
+              <a href="education.html" class="active" aria-current="page"><span class="nav-num">02.</span>Education</a>
+            </li>
+            <li><a href="experience.html"><span class="nav-num">03.</span>Experience</a></li>
+            <li><a href="bookshelf.html"><span class="nav-num">04.</span>Bookshelf</a></li>
+          </ul>
+        </nav>
+        <a class="btn-outline" href="mailto:salahuddin.khan.1994@gmail.com?subject=Resume%20request">Resume</a>
+      </header>
 
-        <article>
-          <h3>NIIT University</h3>
-          <p>B.Tech. Electronics and Communication Engineering (2013 - 2017)</p>
-          <p>GPA: 8.61/10</p>
-          <p>Honors: National Runner-Up, University CanSat Challenge</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © Salahuddin Khan</p>
-    </footer>
+      <main>
+        <h1 class="page-heading">Education</h1>
+        <p class="page-sub">Degrees and highlights.</p>
+
+        <div class="content-card">
+          <article>
+            <h3>Cornell University</h3>
+            <p class="meta">M.Eng. Electrical and Computer Engineering · 2024 – 2025</p>
+            <p>GPA: 3.53</p>
+            <p>
+              Coursework: Computer Vision, Applied Machine Learning, Digital Signal Processing,
+              Practical ML Applications.
+            </p>
+          </article>
+          <article>
+            <h3>NIIT University</h3>
+            <p class="meta">B.Tech. Electronics and Communication Engineering · 2013 – 2017</p>
+            <p>GPA: 8.61/10</p>
+            <p>Honors: National Runner-Up, University CanSat Challenge.</p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Salahuddin Khan</p>
+      </footer>
+    </div>
   </body>
 </html>
