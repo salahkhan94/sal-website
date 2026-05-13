@@ -298,6 +298,14 @@ main {
   justify-content: center;
 }
 
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
 .hero-photo-placeholder {
   font-size: 2.5rem;
   font-weight: 700;
